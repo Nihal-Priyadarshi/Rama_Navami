@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+@media screen and (min-width: 701px){
+    body{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(./Images/Ram_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 5s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation: animate 15s alternate-reverse infinite;
+    }
+    @keyframes animate{
+        0%{
+            background-image: url(./Images/Ram_2.jpg);
+        }
+        50%{
+            background-image: url(./Images/Ram_3.jpg);
+        }
+        100%{
+            background-image: url(./Images/Ram_1.jpg);
+        }
+    }
+    .container{
+        height: 90vh;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px auto;
+        border-radius: 20px;
+        width: 60vw;
+    }
+    .body:hover{
+        transition-duration: 2s;
+        background: rgba(255, 255, 255, 0.6);
+        animation: animate1 4s linear infinite;
+    }
+    @keyframes animate1{
+        0%,50%,100%{
+            transform: translateY(0px);
+        }
+        25%{
+            transform: translateY(-20px);
+        }
+        75%{
+            transform: translateY(20px);
+        }
+    }
+    .wish{
+        margin: auto;
+        padding: 10px auto;
+        text-align: center;
+        font-size: 1.5em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    .copyright h1{
+        text-align: center;
+        font-size: 1.5em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+        color: turquoise;
+        animation: animate2 1s linear infinite;
+    }
+    @keyframes animate2{
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        20%{
+            filter: hue-rotate(72deg);
+        }
+        40%{
+            filter: hue-rotate(144deg);
+        }
+        60%{
+            filter: hue-rotate(216deg);
+        }
+        80%{
+            filter: hue-rotate(288deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+@media screen and (max-height: 400px) and (orientation: landscape){
+    body{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(./Images/Ram_1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 5s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation: animate 15s alternate-reverse infinite;
+    }
+    @keyframes animate{
+        0%{
+            background-image: url(./Images/Ram_2.jpg);
+        }
+        50%{
+            background-image: url(./Images/Ram_3.jpg);
+        }
+        100%{
+            background-image: url(./Images/Ram_1.jpg);
+        }
+    }
+    .container{
+        height: 90vh;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        width: 60vw;
+    }
+    .body:hover{
+        transition-duration: 0s;
+        background: transparent;
+    }
+    .wish{
+        text-align: center;
+        font-size: 1em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    .copyright h1{
+        text-align: center;
+        font-size: 1.2em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+        color: turquoise;
+        animation: animate1 1s linear infinite;
+    }
+    @keyframes animate1{
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        20%{
+            filter: hue-rotate(72deg);
+        }
+        40%{
+            filter: hue-rotate(144deg);
+        }
+        60%{
+            filter: hue-rotate(216deg);
+        }
+        80%{
+            filter: hue-rotate(288deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    body{
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(./Images/Ram_3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .container{
+        height: 90vh;
+        width: 100%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body{
+        width: 60vw;
+    }
+    .wish{
+        text-align: center;
+        font-size: 1em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+    }
+    .copyright{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    .copyright h1{
+        text-align: center;
+        font-size: 1.2em;
+        filter: brightness(200%);
+        filter: contrast(150%);
+        color: turquoise;
+        animation: animate 1s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        20%{
+            filter: hue-rotate(72deg);
+        }
+        40%{
+            filter: hue-rotate(144deg);
+        }
+        60%{
+            filter: hue-rotate(216deg);
+        }
+        80%{
+            filter: hue-rotate(288deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .wish {
+        font-size: 24px;
+    }
+}
